@@ -343,7 +343,7 @@ void start_game(char board[BOARD_SIZE][BOARD_SIZE], Word words[], int numWords){
 }
 void alarm_handler(int signum) {
     // Cambiar tablero cada cierto tiempo
-    printf("The words have changed\n");
+    printf("The words have changed, press any character and hit enter, gotta try again ¯\_(ツ)_/¯\n");
     for(int i = 0; i<=6;i++){
         if(wordStatus[i] == 0){
             wordtype[i] = 1;
